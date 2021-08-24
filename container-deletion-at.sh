@@ -1,5 +1,5 @@
-#This script contains the commands to create a postgress and sonarqube containers
-#for persisting data this script also creates volumes for the containers
+#This script contains the commands to delete a postgress and sonarqube containers
+#Also delete volumes that correspond to the containes 
 
 #Delete containers
 docker rm -f sonardb sonarqube
