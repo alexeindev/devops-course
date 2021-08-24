@@ -44,3 +44,14 @@ services:
             - 8081:8081
         networks:
             - att-net
+volumes:
+    postgresql:
+    postgresql_data:
+    sonarqube_logs:
+    sonarqube_data:
+    sonarqube_extensions:
+    jenkins_home:
+    nexus_data:
+
+networks:
+    att-net:
