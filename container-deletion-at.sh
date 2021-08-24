@@ -2,9 +2,11 @@
 #Also delete volumes that correspond to the containes 
 
 #Delete containers
-docker rm -f sonardb sonarqube
+docker rm -f sonardb sonarqube jenkins nexus
 #Delete volumes
 docker volume rm postgresql postgresql_data
 docker volume rm sonarqube_data sonarqube_extensions sonarqube_logs
+docker volume rm jenkins 
+docker volume rm nexus
 #Delete network
 docker network remove att-net
